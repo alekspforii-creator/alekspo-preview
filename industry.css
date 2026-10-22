@@ -225,3 +225,4 @@
   .industry-media-shade,.industry-frame-meta,.industry-video-toggle,.industry-progress { display:none!important }
   .industry-bottom-copy { color:#fff!important }
 }
+.experience-film-link{margin:-32px 0 45px;text-align:right}.experience-film-link a{display:inline-flex;gap:12px;align-items:center;color:#3b6784;border-bottom:1px solid #9ab2c4;padding-bottom:7px;font-size:12px;font-weight:700;letter-spacing:.025em}.experience-film-link a:hover{color:#18364b;border-color:#18364b}@media(max-width:760px){.experience-film-link{margin:-10px 0 32px;text-align:left}}
