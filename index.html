@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="refinements.css" />
   <link rel="stylesheet" href="design-system.css" />
+  <link rel="stylesheet" href="industry.css" />
   <script src="script.js" defer></script>
+  <script src="industry.js" defer></script>
 </head>
 <body>
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
@@ -157,6 +159,30 @@
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="industry-feature" id="industry" aria-labelledby="industry-title">
+      <div class="shell">
+        <div class="industry-heading reveal">
+          <div class="industry-heading-main">
+            <span class="industry-kicker">Отраслевой опыт / Энергетика</span>
+            <h2 id="industry-title">Масштаб проектов.<br><span>Ответственность решений.</span></h2>
+          </div>
+          <p>Профессиональный опыт в структурах энергетической отрасли — на стыке безопасности, управления и обеспечения устойчивости процессов.</p>
+        </div>
+        <div class="industry-media reveal" id="industryFilm" aria-label="Кинематографичный видеоролик о ветроэнергетике">
+          <video class="industry-video" id="industryVideo" preload="metadata" poster="загружено.jpg" playsinline muted aria-label="Ветроэнергетика: панорама ветропарка">
+            <source src="alekspo_windfarm_web.mp4" type="video/mp4" />
+            Ваш браузер не поддерживает воспроизведение видео.
+          </video>
+          <div class="industry-media-shade" aria-hidden="true"></div>
+          <div class="industry-frame-meta"><span>Энергетическая инфраструктура</span><span>Визуальная интерпретация отраслевого опыта</span></div>
+          <div class="industry-bottom-copy"><strong>Ветроэнергетика</strong><span>Управление · Комплексная безопасность · Устойчивость</span></div>
+          <button type="button" class="industry-video-toggle" id="industryVideoToggle" aria-label="Воспроизвести видеоролик"><span class="industry-video-toggle-icon" id="industryVideoIcon" aria-hidden="true">▶</span><span id="industryVideoLabel">Смотреть</span></button>
+          <div class="industry-progress" aria-hidden="true"><span class="industry-progress-fill" id="industryProgressFill"></span></div>
+        </div>
+        <div class="industry-footnote"><span>Художественная визуализация тематики проектов; кадры не являются документальной съёмкой конкретных предприятий.</span><span>01 / Энергетика</span></div>
       </div>
     </section>
 
