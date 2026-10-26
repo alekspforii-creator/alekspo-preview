@@ -40,7 +40,7 @@ html { scroll-padding-top:calc(95px + var(--notice-height)); }
 .experience-ambient{
   position:relative;width:100%;height:clamp(280px,36vw,490px);
   overflow:hidden;margin-top:clamp(70px,8vw,125px);
-  background:#1a2b3a url("https://alekspo.ru/alekspo_industry_poster.jpg") center 50%/cover no-repeat;
+  background:#1a2b3a url("alekspo_industry_poster.jpg") center 50%/cover no-repeat;
   isolation:isolate;
 }
 .experience-ambient video{
