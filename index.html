@@ -13,10 +13,13 @@
   <link rel="stylesheet" href="refinements.css" />
   <link rel="stylesheet" href="design-system.css" />
   <link rel="stylesheet" href="industry.css" />
+  <link rel="stylesheet" href="site-update.css" />
   <script src="script.js" defer></script>
   <script src="industry.js" defer></script>
+  <script src="site-update.js" defer></script>
 </head>
 <body>
+  <div class="site-development-notice" role="status"><span class="status-dot" aria-hidden="true"></span>Сайт находится в стадии разработки</div>
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   <a class="skip-link" href="#about">Перейти к содержанию</a>
   <header class="site-header" id="siteHeader">
@@ -46,13 +49,13 @@
           <h1 id="hero-title" class="hero-title reveal">Александр<br><em>Полковников</em><span class="title-full-stop">.</span></h1>
           <p class="hero-description reveal">Руководитель в сфере корпоративной безопасности и операционного управления. Опыт построения устойчивых процессов, защиты интересов бизнеса и реализации управленческих решений.</p>
           <div class="hero-actions reveal">
-            <a href="resume.pdf" download="Полковников_Александр_Васильевич_Резюме.pdf" class="resume-download" aria-label="Скачать резюме Александра Полковникова в формате PDF">Скачать резюме · PDF <span class="file-icon" aria-hidden="true">↓</span></a>
+            <div class="resume-cta"><button type="button" class="resume-download resume-download-pending" disabled aria-describedby="resume-note-top">Скачать резюме · PDF <span class="file-icon" aria-hidden="true">↓</span></button><span class="resume-note" id="resume-note-top">Кнопка будет активна позднее</span></div>
             <a href="#experience" class="text-link">Изучить опыт <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="hero-visual" aria-label="Профессиональный портрет Александра Полковникова" role="img">
           <div class="portrait-rim"></div>
-          <img src="portrait.png" alt="Александр Полковников в деловом костюме" fetchpriority="high" />
+          <img src="alekspo_portrait_2026.webp" onerror="this.onerror=null;this.src='portrait.png'" alt="Профессиональный портрет" fetchpriority="high" />
           <div class="hero-image-mask"></div>
           <div class="portrait-caption"><span class="portrait-caption-dash"></span> ПРОФЕССИОНАЛЬНЫЙ ПРОФИЛЬ</div>
         </div>
@@ -162,29 +165,11 @@
           </article>
         </div>
       </div>
-    </section>
-
-    <section class="industry-feature" id="industry" aria-labelledby="industry-title">
-      <div class="shell">
-        <div class="industry-heading reveal">
-          <div class="industry-heading-main">
-            <span class="industry-kicker">Отраслевой опыт / Энергетика</span>
-            <h2 id="industry-title">Масштаб проектов.<br><span>Ответственность решений.</span></h2>
-          </div>
-          <p>Профессиональный опыт в структурах энергетической отрасли — на стыке безопасности, управления и обеспечения устойчивости процессов.</p>
-        </div>
-        <div class="industry-media reveal" id="industryFilm" aria-label="Кинематографичный видеоролик о ветроэнергетике">
-          <video class="industry-video" id="industryVideo" preload="metadata" poster="загружено.jpg" playsinline muted aria-label="Ветроэнергетика: панорама ветропарка">
-            <source src="alekspo_windfarm_web.mp4" type="video/mp4" />
-            Ваш браузер не поддерживает воспроизведение видео.
-          </video>
-          <div class="industry-media-shade" aria-hidden="true"></div>
-          <div class="industry-frame-meta"><span>Энергетическая инфраструктура</span><span>Визуальная интерпретация отраслевого опыта</span></div>
-          <div class="industry-bottom-copy"><strong>Ветроэнергетика</strong><span>Управление · Комплексная безопасность · Устойчивость</span></div>
-          <button type="button" class="industry-video-toggle" id="industryVideoToggle" aria-label="Воспроизвести видеоролик"><span class="industry-video-toggle-icon" id="industryVideoIcon" aria-hidden="true">▶</span><span id="industryVideoLabel">Смотреть</span></button>
-          <div class="industry-progress" aria-hidden="true"><span class="industry-progress-fill" id="industryProgressFill"></span></div>
-        </div>
-        <div class="industry-footnote"><span>Художественная визуализация тематики проектов; кадры не являются документальной съёмкой конкретных предприятий.</span><span>01 / Энергетика</span></div>
+      <div class="experience-ambient" id="industry" aria-label="Видеофон об опыте в энергетике и промышленности">
+        <video id="experienceAmbientVideo" class="industry-ambient-video" muted playsinline preload="none" poster="alekspo_industry_poster.jpg" aria-hidden="true">
+          <source src="alekspo_industry_story.mp4" type="video/mp4">
+        </video>
+        <div class="industry-attribution"><strong>Энергетика и промышленность</strong> · Художественная визуализация отраслевого опыта, не документальная съёмка предприятий.</div>
       </div>
     </section>
 
